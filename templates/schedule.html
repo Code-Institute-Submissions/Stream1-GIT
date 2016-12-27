@@ -1,0 +1,25 @@
+
+
+<div class="container">
+		
+	<div class="row">
+		<h1>Shows Pre-Booked/Confirmed</h1>
+		<p>See our calendar and send us a message to schedule a show in your city.</p>
+		<iframe src="templates/schedule.php" width="100%" height="15%"></iframe> 
+	</div>
+	<hr>
+	<div class="row">
+		<h1>{{title}}</h1>
+		<p>Send us a email.</p>
+		<script src="javascript/my.js"></script>
+		<form action="templates/schedule_action.php" method="post" id="idf">
+			Name: <input type="text" name="name" placeholder="name"><br>
+			E-mail: <input type="email" name="email" placeholder="email" /><br>
+			Start Date: <input type="text" name="start_date" placeholder="aaaa/mm/dd"><br>
+			End Date: <input type="text" name="end_date" placeholder="aaaa/mm/dd"><br>
+			Location: <input type="text" name="location"><br>
+			<input type="button" onclick="validaemail()" value="Submit" /><br />
+				 
+		</form>
+	</div>
+</div>

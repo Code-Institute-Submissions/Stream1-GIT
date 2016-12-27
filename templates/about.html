@@ -1,0 +1,31 @@
+<div class="container">
+	<h1>{{title}}</h1>
+		<div class="col-md-6">
+			<figure>
+				<img src="images/monkees_band.jpg">
+				<figcaption>The Monkees, top from left: Peter Tork, Micky Dolenz. Sitting, from left: Davy Jones, Michael Nesmith.</figcaption>
+			</figure>
+		</div>
+		<div class="col-md-6">
+			<div class="about_monkees">The Monkees are an American-British pop rock band originally active between 1965 and 1971, with subsequent reunion albums and tours in the decades that followed. <br>
+		They were formed in Los Angeles in 1965 by Bob Rafelson and Bert Schneider for the American television series The Monkees, which aired from 1966 to 1968. <br>
+		The musical acting quartet was composed of Americans Micky Dolenz, Michael Nesmith and Peter Tork and British actor and singer Davy Jones. The band's music was initially supervised by producer Don Kirshner. <br>
+		(From Wikipedia, the free encyclopedia: https://en.wikipedia.org/wiki/The_Monkees)<br><br>
+
+			</div>
+		</div>
+		
+</div>
+	<div class="container">
+	<div class="row">
+	<h1>Our Locations</h1>
+		<div class="col-md-6">
+			
+			<select ng-model="map" ng-options="mapview.address for mapview in maps"></select>
+		</div>
+		<div class="col-md-6">
+			<h3>{{map.address}}</h3>
+			<make-map map="map"></make-map>
+		</div>
+	</div>
+</div>

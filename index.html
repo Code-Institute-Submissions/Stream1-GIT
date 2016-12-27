@@ -1,0 +1,49 @@
+<!doctype html>
+<html ng-app='movieDBApp'>
+  <head>
+      <title>Final Project Stream 1</title>
+	<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+	
+  <script src="javascript/vendor/angular.min.js"></script>
+  <script src="javascript/vendor/angular-route.min.js"></script>
+  <script src="javascript/vendor/jquery-1.11.3.min.js"></script>
+  <script src="javascript/vendor/bootstrap.min.js"></script>
+  <script src="javascript/my.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="nav navbar-header">
+          <a class="navbar-brand" href="http://www.alinechaves.com" target='_blank'>Aline Chaves Ribeiro - Final Project - Stream 1</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapsingList">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myCollapsingList">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/about">About</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More too see <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#/musics">Musics</a></li>
+                <li><a href="#/videos">Videos</a></li>
+                <li><a href="#/schedule">Schedule a show</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div ng-view>
+    </div>
+  </body>
+  <script src='javascript/app.js'></script>
+  <script src='javascript/controller.js'></script>
+  <script src='javascript/directive.js'></script>
+  <script src='javascript/service.js'></script>
+</html>

@@ -1,0 +1,18 @@
+<div class="map-container">
+	
+	<img class="img-thumbnail img-responsive" src="https://maps.googleapis.com/maps/api/staticmap?center={{map.address}}&key=AIzaSyDSVu267npTOn-_7Zhkg8uuG1AA8ttOW0c&zoom={{map.zoom}}&size={{mapDimensions()}}&markers=color:red|{{map.address}}" />
+	
+	<!--<img class="img-thumbnail img-responsive" src="https://www.google.com/maps/embed/v1/search?q={{map.address}}&key=AIzaSyDSVu267npTOn-_7Zhkg8uuG1AA8ttOW0c" />
+	-->
+	<!--<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q={{map.address}}&key=AIzaSyDSVu267npTOn-_7Zhkg8uuG1AA8ttOW0c" allowfullscreen></iframe>  
+	-->
+	<br />
+	<div class="zoom-controls">
+		<button class="zoom-button btn btn-primary" ng-click="zoomIn()">
+			<span class="glyphicon glyphicon-plus"></span>
+		</button>
+		<button class="zoom-button btn btn-primary" ng-click="zoomOut()">
+			<span class="glyphicon glyphicon-minus"></span>
+		</button>
+	</div>
+</div>
