@@ -23,3 +23,4 @@ cd to mdb-nav folder, the git clone creates this folder for you
 
 If you don't have npm installed you can still run the application just
 copy the main folder to where your files get served from locally
+# Stream1-GIT
