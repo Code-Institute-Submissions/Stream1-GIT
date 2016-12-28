@@ -1,7 +1,7 @@
 function validaemail(mail){
  	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(idf.email.value))  
   {  
-    alert("valid email"); 
+  //  alert("valid email"); 
   	idf.submit();
     return (true)  
   }  

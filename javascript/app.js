@@ -29,11 +29,13 @@ angular.module('movieDBApp', ['ngRoute','movieControllers','movieDBDirectives','
 		  		templateUrl:'templates/about.html',
 		  		controller: 'AboutController'
 		  	})
+	 		.when("/signup", {
+		  		templateUrl: 'templates/signup.html',
+				controller: 'SignupController'
+		  	})		  	
 		  	.when('/', {
 		  		templateUrl: 'templates/home.html',
 		  		controller: 'HomeController'
-		  	})
-		 	
- 
+		  	}) 
 		  	.otherwise({redirectTo: '/home'}); 
 	});

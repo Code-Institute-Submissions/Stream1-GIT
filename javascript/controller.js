@@ -13,6 +13,10 @@ angular.module('movieControllers',[])
  $scope.loading = false;
  $scope.title = 'Monkees Video'
  })
+.controller('SignupController',function($scope) {
+ $scope.loading = false;
+ $scope.title = 'Signup'
+ })
 
 .controller('scheduleController',function($scope) {
  $scope.loading = false;
